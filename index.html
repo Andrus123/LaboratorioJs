@@ -17,64 +17,169 @@
           <form action="" method="" id="formulario" name="formu">
             <div class="user-details">
               <div class="input-box">
-                <span class="details">1.- Fibonacci</span><input class="botons" type="button" onclick="fibo()" value="generar">
+                <span class="details">1.- Fibonacci</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal">
                 <input type="text" id="fibonacci" placeholder="Serie: 0,1,1,2,3,5,8..." name="fib">
+                <div class="modal" id="modal">
+                  <div class="modal-header">
+                    <div class="title">Fibonacci: </div>
+                    <button data-close-button="modal" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
                 <div class="input-box">
-                <span class="details">2.- Binario</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="Enter your name"  id="binario">
+                <span class="details">2.- Binario</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal2">
+                <input type="text" placeholder="Serie: 0,1,10,11,100,101"  id="binario">
+                <div class="modal" id="modal2">
+                  <div class="modal-header">
+                    <div class="title">Binario:</div>
+                    <button data-close-button="modal2" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">3.- Factorial</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="Enter your name"  id="factorial">
+                <span class="details">3.- Factorial</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal3">
+                <input type="text" placeholder="S: 1!+2!+3!+...+N!"  id="factorial">
+                <div class="modal" id="modal3">
+                  <div class="modal-header">
+                    <div class="title">Factorial generado</div>
+                    <button data-close-button="modal3" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">4.- Rotación</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="Enter your name"  id="rotacion">
+                <span class="details">4.- Rotación</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal4">
+                <input type="text" placeholder="Rotar a la derecha digitos pares > 6"  id="rotacion">
+                <div class="modal" id="modal4">
+                  <div class="modal-header">
+                    <div class="title">Rotacion: </div>
+                    <button data-close-button="modal4" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">5.- Digitos Repetidos</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="Enter your name" id="repetidos">
+                <span class="details">5.- Digitos Repetidos</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal5">
+                <input type="text" placeholder="Dado x > 100, mostrar repetidos" id="repetidos">
+                <div class="modal" id="modal5">
+                  <div class="modal-header">
+                    <div class="title">Digitos repetidos: </div>
+                    <button data-close-button="modal5" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">6.- Capicua</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="Enter your username"  id="capicua">
+                <span class="details">6.- Capicua</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal6">
+                <input type="text" placeholder="Verificar si un numero es capicua"  id="capicua">
+                <div class="modal" id="modal6">
+                  <div class="modal-header">
+                    <div class="title">Capicua? </div>
+                    <button data-close-button="modal6" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">7.- Primo</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="Enter your email"  id="primo">
+                <span class="details">7.- Primo</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal7">
+                <input type="text" placeholder="Verificar si es un numero primo"  id="primo">
+                <div class="modal" id="modal7">
+                  <div class="modal-header">
+                    <div class="title">Es primo? </div>
+                    <button data-close-button="modal7" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">8.- Generar Primos</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="Enter your phone"  id="generar">
+                <span class="details">8.- Generar Primos</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal8">
+                <input type="text" placeholder="Generar números primos para n"  id="generar">
+                <div class="modal" id="modal8">
+                  <div class="modal-header">
+                    <div class="title">Primos generados: </div>
+                    <button data-close-button="modal8" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">9.- Generar Fibonacci</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="Enter your passwoord"  id="generarfib">
+                <span class="details">9.- Generar Fibonacci</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal9">
+                <input type="text" placeholder="Generar Fibonacci dado un N"  id="generarfib">
+                <div class="modal" id="modal9">
+                  <div class="modal-header">
+                    <div class="title">Fibonacci: </div>
+                    <button data-close-button="modal9" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">10.- Generar serie Exponencial</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="confirm passwoord"  id="exponencial">
+                <span class="details">10.- Generar serie Exponencial</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal10">
+                <input type="text" placeholder="Generar la serie exponencial"  id="exponencial">
+                <div class="modal" id="modal10">
+                  <div class="modal-header">
+                    <div class="title">Exponencial:</div>
+                    <button data-close-button="modal10" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">11.- Palindrome</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="confirm passwoord"  id="palindrome">
+                <span class="details">11.- Palindrome</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal11">
+                <input type="text" placeholder="es Palindrome?"  id="palindrome">
+                <div class="modal" id="modal11">
+                  <div class="modal-header">
+                    <div class="title">Es Palindrome?</div>
+                    <button data-close-button="modal11" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">12.- Invertir</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="confirm passwoord"  id="invertir">
+                <span class="details">12.- Invertir</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal12">
+                <input type="text" placeholder="Invertir una cadena de caracteres"  id="invertir">
+                <div class="modal" id="modal12">
+                  <div class="modal-header">
+                    <div class="title">Cadena invertida:</div>
+                    <button data-close-button="modal12" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">13.- Calculadora</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="confirm passwoord"  id="calculadora">
+                <span class="details">13.- Calculadora</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal13">
+                <input type="text" placeholder="Calculadora"  id="calculadora">
+                <div class="modal" id="modal13">
+                  <div class="modal-header">
+                    <div class="title">Calculadora</div>
+                    <button data-close-button="modal13" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">14.- Romanos</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="confirm passwoord"  id="romanos">
+                <span class="details">14.- Romanos</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal14">
+                <input type="text" placeholder="De numero entero a números romanos"  id="romanos">
+                <div class="modal" id="modal14">
+                  <div class="modal-header">
+                    <div class="title">Romanos:</div>
+                    <button data-close-button="modal14" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
               <div class="input-box">
-                <span class="details">15.- Matriz Pascal</span><input class="botons" type="button" onclick="fibo()" value="generar">
-                <input type="text" placeholder="confirm passwoord"  id="pascal">
+                <span class="details">15.- Matriz Pascal</span><input class="botons" type="button" onclick="fibo()" value="generar" data-modal-target="#modal15">
+                <input type="text" placeholder="Generar la matriz Pascal"  id="pascal">
+                <div class="modal" id="modal15">
+                  <div class="modal-header">
+                    <div class="title">Matriz Pascal:</div>
+                    <button data-close-button="modal15" class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body" id="modal-body">Hola</div>
+                </div>
               </div>
             </div>
           </form>
