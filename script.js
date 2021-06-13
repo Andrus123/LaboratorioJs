@@ -32,6 +32,20 @@ function closeModal(modal){
 
 
 function fibo(){
-    const numero = document.getElementById("fibonacci"); 
-    document.getElementById("modal-body").innerHTML = numero.value;
+    var numero = document.getElementById("fibonacci"); 
+    var num = parseInt(numero.value);
+    var num1=0;
+    var num2=1;
+    var sum;
+    var i=0;
+    for (i = 0; i < num; i++) 
+    {
+        sum=num1+num2;
+        num1=num2;
+        num2=sum;
+    }
+    var num = num2;
+    numero = num;
+    document.getElementById("modal-body").innerHTML = numero;
 }
+
