@@ -21,12 +21,10 @@ closeModalButtons.forEach(button => {
 function openModal(modal){
     if (modal == null) return
     modal.classList.add('active')
-    overlay.classList.add('active')
 }
 function closeModal(modal){
     if (modal == null) return
     modal.classList.remove('active')
-    overlay.classList.remove('active')
 }
 
 
@@ -34,18 +32,19 @@ function closeModal(modal){
 function fibo(){
     var numero = document.getElementById("fibonacci"); 
     var num = parseInt(numero.value);
-    var num1=0;
-    var num2=1;
+    var num1=1;
+    var num2=0;
     var sum;
     var i=0;
+    var imprimir;
     for (i = 0; i < num; i++) 
     {
+        console.log(num2);
+        imprimir = document.createTextNode(num2+",");
+        document.getElementById("modal-body").appendChild(imprimir);
         sum=num1+num2;
         num1=num2;
         num2=sum;
     }
-    var num = num2;
-    numero = num;
-    document.getElementById("modal-body").innerHTML = numero;
 }
 
