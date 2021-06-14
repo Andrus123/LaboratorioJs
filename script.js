@@ -48,3 +48,35 @@ function fibo(){
     }
 }
 
+function bin(){
+    var numero = document.getElementById("binario");
+    var num = parseInt(numero.value);
+    var binario = "";
+    var imprimir;
+    for (let index = 0; index < num; index++) {
+                
+                let decimal = index;
+                let res = decimal%2;
+                decimal = decimal/2;
+                binario = res.toString()+binario;
+                imprimir = document.createTextNode(binario+",");
+                document.getElementById("modal-body2").appendChild(imprimir);
+    }
+}
+
+function factorial(){
+    var numero = document.getElementById("factorial");
+    var num = parseInt(numero.value);
+    
+    const factorial = numero => {
+        // Sacar valor absoluto
+        numero = Math.abs(numero);
+        if (numero <= 1) return 1;
+        return numero * factorial(numero - 1);
+    };
+    
+    for (let x = 0; x < 10; x++) {
+        console.log(`El factorial de ${x} es ${factorial(x)}`);
+    }
+}
+
