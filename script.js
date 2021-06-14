@@ -27,8 +27,8 @@ function closeModal(modal){
     modal.classList.remove('active')
 }
 
-
-
+// Generar las siguientes series, para ello tilizar formularios y javascript
+//1.- Fibonacci:  0,1,1,2,3,5,8 
 function fibo(){
     var numero = document.getElementById("fibonacci"); 
     var num = parseInt(numero.value);
@@ -48,35 +48,35 @@ function fibo(){
     }
 }
 
+//Binaria: 0,1,10,11,100,101...
 function bin(){
     var numero = document.getElementById("binario");
     var num = parseInt(numero.value);
-    var binario = "";
-    var imprimir;
     for (let index = 0; index < num; index++) {
-                
-                let decimal = index;
-                let res = decimal%2;
-                decimal = decimal/2;
-                binario = res.toString()+binario;
-                imprimir = document.createTextNode(binario+",");
-                document.getElementById("modal-body2").appendChild(imprimir);
+        imprimir = document.createTextNode(index.toString(2)+",")
+        document.getElementById("modal-body2").appendChild(imprimir);
     }
+    //imprimir = document.createTextNode(binario+",");
+    //document.getElementById("modal-body2").appendChild(imprimir);
 }
 
-function factorial(){
+function factor(){
     var numero = document.getElementById("factorial");
     var num = parseInt(numero.value);
-    
-    const factorial = numero => {
-        // Sacar valor absoluto
-        numero = Math.abs(numero);
-        if (numero <= 1) return 1;
-        return numero * factorial(numero - 1);
-    };
-    
-    for (let x = 0; x < 10; x++) {
-        console.log(`El factorial de ${x} es ${factorial(x)}`);
+    var sum = 0;
+    for (let index = 0; index <= num; index++) {
+        const dato =  index// Número del que queremos calcular el factorial
+        let r = 1;
+        for(let i = dato; i>0; i--){
+        r *= i;
+        
     }
+        sum = sum + r;
+        imprimir = document.createTextNode(r+"+");
+        document.getElementById("modal-body3").appendChild(imprimir);
+    //console.log(r);   
+    }
+        suma = document.createTextNode("S = "+sum);
+        document.getElementById("modal-body3").appendChild(suma);
 }
 
