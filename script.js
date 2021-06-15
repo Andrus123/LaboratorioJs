@@ -195,6 +195,17 @@ function genFibo(){
     }
 }
 
+//Generar la serie Exponencial
+function genExponencial(){
+    var numero = document.getElementById("exponencial");
+    var num = parseInt(numero.value);
+    for (let i = 0; i < num; i++) {
+        var exp = 2**i;
+        imprimir = document.createTextNode(exp+",");
+        document.getElementById("modal-body10").appendChild(imprimir);
+    }
+}
+
 //Verificar si una palabra es Palindromo
 function Palindromo(){
     String.prototype.reverse=function(){return this.split("").reverse().join("");}
