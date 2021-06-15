@@ -183,3 +183,13 @@ function Palindromo(){
     }
     
 }
+
+//Invertir una cadena de caracteres
+function Invertir(){
+    String.prototype.reverse=function(){return this.split("").reverse().join("");}
+    var palabra = document.getElementById("invertir");
+    let pal = palabra.value;
+    let invertida = pal.reverse();
+    imprimir = document.createTextNode("Palabra invertida: "+invertida);
+    document.getElementById("modal-body12").appendChild(imprimir);
+}
