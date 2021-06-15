@@ -99,6 +99,17 @@ function Rotacion() {
 }
 
 function Repetidos() {
+    var numero = document.getElementById("repetidos");
+    var num = parseInt(numero.value);
+    if(num > 100){
+        let digitos = String(num).split('');
+        for (let i = 0; i < numero.value.length; i++) {
+                if(digitos[i]==digitos[i+1]){
+            imprimir = document.createTextNode(digitos[i]+",");
+            document.getElementById("modal-body5").appendChild(imprimir);
+                }
+        }
+    }
 }
 
 
