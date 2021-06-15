@@ -148,6 +148,33 @@ function Primo(){
             document.getElementById("modal-body7").appendChild(imprimir);
     }
 }
+function eratosthenes() {
+    var numero = document.getElementById("primos");
+    var n = parseInt(numero.value);
+    var array = [],
+      upperLimit = Math.sqrt(n), //(1)
+      output = [];
+  
+    for (var i = 0; i < n; i++) { //(2)
+      array.push(true);
+    }
+  
+    for (var i = 2; i <= upperLimit; i++) {
+      if (array[i]) {
+        for (var j = i * i; j < n; j += i) {
+          array[j] = false; //(3)
+        }
+      }
+    }
+  
+    for (var i = 2; i < n; i++) {
+      if (array[i]) {
+        output.push(i); //(4)
+      }
+    }
+  imprimir = document.createTextNode(output);
+  document.getElementById("modal-body8").appendChild(imprimir);
+  };
 
 //Generar Fibonacciss
 function genFibo(){
