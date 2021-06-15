@@ -126,6 +126,30 @@ function Capicua(){
     }
 }
 
+function Primo(){
+    var numero = document.getElementById("primo");
+    var num = parseInt(numero.value);
+    var cont = 0;
+        // Casos especiales
+        if (num == 0 || num == 1 || num == 4){
+            cont++;
+        } 
+        for (let x = 2; x < num / 2; x++) {
+            if (num % x == 0) {
+            cont++;
+            }
+        }
+        // Si no se pudo dividir por ninguno de los de arriba, sí es primo
+        if(cont == 0){
+            imprimir = document.createTextNode("Es Primo");
+            document.getElementById("modal-body7").appendChild(imprimir);
+        }else if(cont > 0){
+            imprimir = document.createTextNode("No es Primo");
+            document.getElementById("modal-body7").appendChild(imprimir);
+    }
+}
+
+
 function genFibo(){
     var numero = document.getElementById("genfibonacci");
     var num = parseInt(numero.value);
