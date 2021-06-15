@@ -218,7 +218,7 @@ form .user-details .input-box{
 @media screen and (max-width: 475px){
     section{
         display: flex;
-        height: 290vh;
+        height: auto;
         justify-content: center;
         align-items: center;
         padding: 10px;
