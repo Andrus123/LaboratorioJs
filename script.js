@@ -149,7 +149,7 @@ function Primo(){
     }
 }
 
-
+//Generar Fibonacciss
 function genFibo(){
     var numero = document.getElementById("genfibonacci");
     var num = parseInt(numero.value);
@@ -168,4 +168,18 @@ function genFibo(){
     }
 }
 
-
+//Verificar si una palabra es Palindromo
+function Palindromo(){
+    String.prototype.reverse=function(){return this.split("").reverse().join("");}
+    var palabra = document.getElementById("palindrome");
+    let pal = palabra.value;
+    let reversa = pal.reverse();
+    if(pal == reversa){
+        imprimir = document.createTextNode(palabra.value+" es un Palíndromo");
+        document.getElementById("modal-body11").appendChild(imprimir);
+    }else{
+        imprimir = document.createTextNode(palabra.value+" no es un Palíndromo");
+        document.getElementById("modal-body11").appendChild(imprimir);
+    }
+    
+}
