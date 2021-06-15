@@ -5,8 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    outline:0;
 }
-
 .modal{
     position: absolute;
     top: 26%;
@@ -212,4 +213,92 @@ form .user-details .input-box{
 .user-details .input-box input:hover{
     border-color: rgba(223,225,229,0);
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+@media screen and (max-width: 375px){
+    section{
+        display: flex;
+        height: 290vh;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .user-details .input-box > .botons{
+        width: 63%;
+    }
+    header h2{
+        padding-left: 27px;
+    }
+    .container form .user-details {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    form .user-details .input-box {
+        margin: 20px 0 12px 0;
+        width: calc(100% / 2 - -156px);
+    }
+    .modal{
+        top: 38%;
+        left: 66%;
+    }
+    #modal2 {
+        top: 54%;
+        left: 68%;
+    }
+    #modal3 {
+        top: 73%;
+        left: 67%;
+    }
+    #modal4 {
+        top: 91%;
+        left: 68%;
+    }
+    #modal5 {
+        top: 113%;
+        left: 67%;
+    }
+    #modal6 {
+        top: 129%;
+        left: 66%;
+    }
+    #modal7 {
+        top: 145%;
+        left: 66%;
+    }
+    #modal8 {
+        top: 166%;
+        left: 65%;
+    }
+    #modal9 {
+        top: 182%;
+        left: 65%;
+    }
+    #modal10 {
+        top: 200%;
+        left: 65%;
+    }
+    #modal11 {
+        top: 219%;
+        left: 65%;
+    }
+    #modal12 {
+        top: 237%;
+        left: 65%;
+    }
+    #modal13 {
+        top: 253%;
+        left: 65%;
+    }
+    #modal14 {
+        top: 270%;
+        left: 65%;
+    }
+    #modal15 {
+        top: 289%;
+        left: 65%;
+    }
 }
