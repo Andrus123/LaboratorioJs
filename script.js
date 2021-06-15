@@ -126,4 +126,22 @@ function Capicua(){
     }
 }
 
+function genFibo(){
+    var numero = document.getElementById("genfibonacci");
+    var num = parseInt(numero.value);
+    var num1 = 1;
+    var num2 = 0;
+    var sum;
+    var i = 0;
+    var imprimir;
+    for (i = 0; i < num; i++) {
+        console.log(num2);
+        imprimir = document.createTextNode(num2 + ",");
+        document.getElementById("modal-body9").appendChild(imprimir);
+        sum = num1 + num2;
+        num1 = num2;
+        num2 = sum;
+    }
+}
+
 
