@@ -112,4 +112,18 @@ function Repetidos() {
     }
 }
 
+function Capicua(){
+    String.prototype.reverse=function(){return this.split("").reverse().join("");}
+    var numero = document.getElementById("capicua");
+    var num = numero.value;
+    var reverso = num.reverse();
+    if(num == reverso){
+        imprimir = document.createTextNode("Es Capicua");
+        document.getElementById("modal-body6").appendChild(imprimir);
+    }else{
+        imprimir = document.createTextNode("No es Capicua");
+        document.getElementById("modal-body6").appendChild(imprimir);
+    }
+}
+
 
